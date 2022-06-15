@@ -37,3 +37,29 @@ function buildTable(data) {
 //Looped through each object in the array
 //Appended a row to the HTML table
 //Added each value from the object into a cell
+
+//add a second function to our code that will focus on filtering the table
+//create a couple of variables to hold our date data, both filtered and unfiltered.
+
+function handleClick() {
+  let date = d3.select("#datetime").property("value");
+//set a default filter and save it to a new variable.  
+  let filteredData = tableData;
+
+//The next step is to check for a date filter using an if statement.
+  if (date) {
+  //filter method that will match the datetime value to the filtered date value.
+    filteredData = filteredData.filter(row => row.datetime === date);
+  }
+  
+  // Rebuild the table using the filtered data
+  // @NOTE: If no date was entered, then filteredData will
+  // just be the original tableData.
+  buildTable(filteredData);
+}
+
+// Attach an event to listen for the form button
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Build the table when the page loads
+buildTable(tableData);
