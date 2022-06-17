@@ -5,11 +5,17 @@ Challenge Week11 Data Analysis BootCamp using JavaScript, HTML, CSS, Boostrap.
 
 In this project, we built a dynamic webpage that can give us interesting data about UFO cases in the US. JavaScript, a Bootstrap framework, HTML and CSS were the tools used to create this webpage and several filters that allows users search specific cities, dates, states, and other data.
 
+Click here to take a look at UFOs Sightings webpage --> https://annarochav.github.io/UFOs/
+
 <img src="https://github.com/annarochav/UFOs/blob/main/static/images/image1.png" width="970" height="" />
 
 ## ⚡Results: 
 
-**Here you can enter UFOs Sightings webpage: https://annarochav.github.io/UFOs/**
+
+
+
+
+
 
 **Search Procedure:**
 
